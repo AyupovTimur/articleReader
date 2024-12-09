@@ -23,7 +23,7 @@ export function buildWebpackConfig (
     },
     resolve: buildResolvers(options),
     plugins: buildPlugins(options),
-    devtool: mode != 'production' ? 'inline-source-map' : undefined,
+    devtool: mode !== 'production' ? 'inline-source-map' : undefined,
     devServer: buildDevServer(options)
   }
 }

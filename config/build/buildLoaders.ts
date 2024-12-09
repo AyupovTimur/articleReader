@@ -1,5 +1,5 @@
 import { type RuleSetRule } from 'webpack'
-import MiniCssExtractPlugin, { loader } from 'mini-css-extract-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { type BuildOptions } from './types/config'
 
 export function buildLoaders ({ mode }: BuildOptions): RuleSetRule[] {
@@ -45,14 +45,14 @@ export function buildLoaders ({ mode }: BuildOptions): RuleSetRule[] {
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
-      mode != 'development' ? MiniCssExtractPlugin.loader : 'style-loader',
+      mode !== 'development' ? MiniCssExtractPlugin.loader : 'style-loader',
       {
         loader: 'css-loader',
         options: {
           modules: {
             auto: (resPath: string) => Boolean(resPath.includes('.module.')),
             localIdentName:
-              mode == 'development'
+              mode === 'development'
                 ? '[path][name]__[local]--[hash:base64:5]'
                 : '[hash:base64:8]'
           }
