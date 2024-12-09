@@ -15,5 +15,6 @@ export function buildPlugins({
     new HtmlWebpackPlugin({
       template: paths.html,
     }),
+      new webpack.HotModuleReplacementPlugin()
   ];
 }
