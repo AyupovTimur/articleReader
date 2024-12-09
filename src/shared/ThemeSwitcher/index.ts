@@ -1,3 +1,3 @@
-import {ThemeSwitcher} from "shared/ThemeSwitcher/ui/ThemeSwitcher";
+import { ThemeSwitcher } from 'shared/ThemeSwitcher/ui/ThemeSwitcher'
 
-export {ThemeSwitcher};
+export { ThemeSwitcher }

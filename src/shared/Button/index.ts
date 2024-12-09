@@ -1,3 +1,3 @@
-import {Button} from "shared/Button/ui/Button";
+import { Button } from 'shared/Button/ui/Button'
 
-export {Button};
+export { Button }
