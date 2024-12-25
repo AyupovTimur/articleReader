@@ -8,16 +8,16 @@ interface PageErrorProps {
 
 export const PageError = ({className}: PageErrorProps) => {
 
-  const {t} = useTranslation('pageError');
+    const {t} = useTranslation('pageError');
 
-  const updatePage = () => {
-      location.reload()
-  }
+    const updatePage = () => {
+        location.reload()
+    }
 
-  return (
-    <div className={classNames(cls.PageError, {}, [className])}>
-      <h1>{t("Произошла ошибка, пожалуйста обновите страницу")}</h1>
-      <button onClick={updatePage}>{t("Обновить страницу")}</button>
-    </div>
-  )
+    return (
+        <div className={classNames(cls.PageError, {}, [className])}>
+            <h1>{t("Произошла ошибка, пожалуйста обновите страницу")}</h1>
+            <button onClick={updatePage}>{t("Обновить страницу")}</button>
+        </div>
+    )
 }
