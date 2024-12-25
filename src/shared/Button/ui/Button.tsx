@@ -4,11 +4,13 @@ import cls from './button.module.scss'
 
 export enum ButtonTheme {
     CLEAR = 'clear',
+    OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string
     theme?: ButtonTheme
+    backgroundColor?: string
 }
 
 export const Button: FC<ButtonProps> = (props) => {
