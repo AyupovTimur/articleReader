@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import {Button, ButtonTheme} from './Button';
 
-// @ts-ignore
 const meta = {
     title: 'shared/Button',
     component: Button,
