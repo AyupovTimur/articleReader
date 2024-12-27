@@ -21,7 +21,7 @@ export const LangSwitcher = ({className}: LangSwitcherProps): ReactElement => {
     return (
         <div className={classNames(cls.LangSwitcher, {}, [className])}>
             <Button theme={ButtonTheme.CLEAR} onClick={toggleTranslate}>
-                <Translate style={{width: '4.8rem', height: '4.8rem'}}/>
+                <Translate className={classNames(cls.LangSwitcher, {}, [])}/>
             </Button>
         </div>
 

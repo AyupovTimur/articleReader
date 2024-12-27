@@ -3,12 +3,38 @@
   width: var(--sidebar-width);
   background: var(--revert-color);
   position: relative;
-
   transition: width 0.3s;
+}
+
+.sidebarButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: none;
 }
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+
+  .switchers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    width: 4.8rem;
+    fill: var(--bg-color);
+    margin-bottom: 1rem;
+  }
+
+  .linkName {
+    display: none;
+  }
 }
 
 .switchers {
@@ -19,8 +45,22 @@
   justify-content: space-around;
 }
 
-.switchersOff {
+.links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkName {
+  margin-bottom: 1rem;
+  font: var(--font-l);
 }
