@@ -23,7 +23,7 @@ export const Sidebar = ({className}: SidebarProps) => {
 
     return (
         <div data-testid='sidebar' className={classNames(cls.Sidebar, {[cls.collapsed]: collapsed}, [className])}>
-            <div className={classNames(cls.sidebarButton, {}, [])}>
+            <div className={classNames(cls.sidebarButton)}>
                 <Button
                     theme={ButtonTheme.OUTLINE}
                     data-testid='sidebar-toggle'
@@ -32,24 +32,24 @@ export const Sidebar = ({className}: SidebarProps) => {
                 </Button>
             </div>
             <div className={classNames(cls.links)}>
-                <AppLink className={classNames(cls.link, {}, [])} theme={AppLinkTheme.SECONDARY} to={'/'}>
-                    <div className={classNames(cls.icon, {}, [])}>
+                <AppLink className={classNames(cls.link)} theme={AppLinkTheme.SECONDARY} to={'/'}>
+                    <div className={classNames(cls.icon)}>
                         <HomePageIcon />
                     </div>
-                    <div className={classNames(cls.linkName, {}, [])}>
+                    <div className={classNames(cls.linkName)}>
                         Главная
                     </div>
                 </AppLink>
-                <AppLink className={classNames(cls.link, {}, [])} theme={AppLinkTheme.SECONDARY} to={'/about'}>
-                    <div className={classNames(cls.icon, {}, [])}>
+                <AppLink className={classNames(cls.link)} theme={AppLinkTheme.SECONDARY} to={'/about'}>
+                    <div className={classNames(cls.icon)}>
                         <AboutAsIcon />
                     </div>
-                    <div className={classNames(cls.linkName, {}, [])}>
+                    <div className={classNames(cls.linkName)}>
                         О проекте
                     </div>
                 </AppLink>
             </div>
-            <div className={classNames(cls.switchers, {}, [])}>
+            <div className={classNames(cls.switchers)}>
                 <ThemeSwitcher/>
                 <LangSwitcher/>
             </div>

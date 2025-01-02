@@ -4,7 +4,7 @@ import i18nForTest from "shared/config/i18n/i18nForTest";
 import {I18nextProvider} from "react-i18next";
 
 export function renderWitchTranslation(component: ReactNode) {
-    return render(
+    return render (
         <I18nextProvider i18n={i18nForTest}>
             {component}
         </I18nextProvider>
