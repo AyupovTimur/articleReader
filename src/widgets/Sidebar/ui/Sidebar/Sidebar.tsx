@@ -1,10 +1,10 @@
 import {classNames} from 'shared/lib/classNames/classNames'
 import cls from './sidebar.module.scss'
 import React from 'react'
-import {ThemeSwitcher} from 'shared/ThemeSwitcher'
-import {LangSwitcher} from 'shared/LangSwitcher'
-import {Button, ButtonTheme} from "shared/Button/ui/Button";
-import {AppLink, AppLinkTheme} from "shared/AppLink/ui/AppLink";
+import {ThemeSwitcher} from 'shared/ui/ThemeSwitcher'
+import {LangSwitcher} from 'shared/ui/LangSwitcher'
+import {Button, ButtonTheme} from "shared/ui/Button/ui/Button";
+import {AppLink, AppLinkTheme} from "shared/ui/AppLink/ui/AppLink";
 import HomePageIcon from 'shared/assets/icons/home_page.svg';
 import AboutAsIcon from 'shared/assets/icons/aboutAs_page.svg';
 import HomePageIconLight from 'shared/assets/icons/home_page_light.svg';

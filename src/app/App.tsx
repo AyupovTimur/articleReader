@@ -1,10 +1,9 @@
 import {useTheme} from './providers/ThemeProvider/index'
 import {classNames} from 'shared/lib/classNames/classNames'
-import './styles/index.scss'
 import {AppRouter} from 'app/providers/Router'
 import {Navbar} from 'widgets/Navbar'
 import {Sidebar} from 'widgets/Sidebar'
-import {Suspense} from 'react'
+import {Suspense, useState} from 'react'
 
 const App = () => {
     const {theme} = useTheme()

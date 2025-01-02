@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react';
-import {Loader} from "shared/Loader/ui/Loader";
+import {Loader} from "shared/ui/Loader/ui/Loader";
 
 describe('Loader tests', () => {
     test('Loader render', () => {

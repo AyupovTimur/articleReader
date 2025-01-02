@@ -8,11 +8,13 @@
   border: none;
   background: none;
   outline: none;
+  color: var(--bg-color);
 }
 
 .outline {
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--revertSolidOutlineBtn);
+  border-radius: 1rem;
   color: var(--bg-color);
   background: none;
 }

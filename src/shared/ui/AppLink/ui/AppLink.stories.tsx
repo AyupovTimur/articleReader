@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {AppLink, AppLinkTheme} from "shared/AppLink/ui/AppLink";
+import {AppLink, AppLinkTheme} from "shared/ui/AppLink/ui/AppLink";
 
 const meta = {
     title: 'shared/AppLink',

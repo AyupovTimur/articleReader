@@ -8,8 +8,17 @@
   --font-m: var(--font-size-m) var(--font-family-main);
   --font-l: var(--font-size-l) var(--font-family-main);
 
-  //Размеры
+  //Размеры навбара и сайдбара
   --navbar-height: 6rem;
   --sidebar-width: 30rem;
   --sidebar-width-collapsed: 7rem;
+
+  //Z - индексы
+  --modalZIndex: 10;
+
+  //Заливка фона
+  --backgroundFill: rgba(0 0 0 / 60%);
+
+  //Фон модального окна
+  --modalBg: #ffffff;
 }
