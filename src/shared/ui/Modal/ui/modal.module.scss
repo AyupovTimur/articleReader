@@ -21,7 +21,8 @@
 .content {
   padding: 2rem;
   border-radius: 0.5rem;
-  background: var(--modalBg);
+  background: var(--primary-color);
+  color: var(--bg-color);
   transition: transform 0.5s;
   transform: scale(0.5);
   max-width: 50%;
