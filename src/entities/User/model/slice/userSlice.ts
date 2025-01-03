@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import {CounterSchema} from "entities/Counter/model/types/CounterSchema";
 import {UserSchema} from "entities/User/model/types/userSchema";
 
 const initialState: UserSchema = {}

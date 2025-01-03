@@ -50,7 +50,7 @@ export const Input = memo((props: InputProps) => {
         <div className={classNames(cls.InputsGroup, {}, [className])}>
             <input
                 ref={ref}
-                className={classNames(cls.input)}
+                className={classNames(cls.input, {[cls.focused]: isFocused})}
                 type={type}
                 value={value}
                 onChange={onChangeHandler}
