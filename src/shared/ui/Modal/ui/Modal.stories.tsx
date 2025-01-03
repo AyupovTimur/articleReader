@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import {Modal} from './Modal';
 
 const meta = {
@@ -19,6 +18,7 @@ export const Light: Story = {
     args: {
         isOpen: true,
         children: 'Text',
+        lazy: true
     },
 };
 
@@ -26,5 +26,6 @@ export const Dark: Story = {
     args: {
         isOpen: true,
         children: 'Text',
+        lazy: true
     },
 };

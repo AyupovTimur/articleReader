@@ -9,6 +9,7 @@ import HomePageIcon from 'shared/assets/icons/home_page.svg';
 import AboutAsIcon from 'shared/assets/icons/aboutAs_page.svg';
 import HomePageIconLight from 'shared/assets/icons/home_page_light.svg';
 import AboutAsIconLight from 'shared/assets/icons/about_page_light.svg';
+import {useTranslation} from "react-i18next";
 
 interface SidebarProps {
     className?: string
@@ -16,7 +17,7 @@ interface SidebarProps {
 
 export const Sidebar = ({className}: SidebarProps) => {
     const [collapsed, setCollapsed] = React.useState(false)
-
+    const {t} = useTranslation("sidebar");
     const onToggleCollapsed = () => {
         setCollapsed(prev => !prev)
     }
@@ -37,7 +38,7 @@ export const Sidebar = ({className}: SidebarProps) => {
                         <HomePageIcon />
                     </div>
                     <div className={classNames(cls.linkName)}>
-                        Главная
+                        {t("Главная")}
                     </div>
                 </AppLink>
                 <AppLink className={classNames(cls.link)} theme={AppLinkTheme.SECONDARY} to={'/about'}>
@@ -45,7 +46,7 @@ export const Sidebar = ({className}: SidebarProps) => {
                         <AboutAsIcon />
                     </div>
                     <div className={classNames(cls.linkName)}>
-                        О проекте
+                        {t("О проекте")}
                     </div>
                 </AppLink>
             </div>
